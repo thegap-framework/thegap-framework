@@ -77,10 +77,7 @@ File	Description
 `wsca-v1.json`	WSCA V1 — 90 thought-loop contexts, 3 facets, machine-readable
 `WHITEPAPER.md`	THE GAP Framework whitepaper V1.0
 `LICENSE`	Creative Commons Attribution 4.0 International
----
-Citation
-Hsieh, A. (2026). THE GAP: A Neutral Layer Standard for Irreversible Digital Decisions.
-SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6518398
+
 ---
 License
 The GAP Framework specification (this repository) is released under Creative Commons Attribution 4.0 International.
