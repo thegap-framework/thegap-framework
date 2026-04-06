@@ -137,7 +137,7 @@ Both applications derive legal defensibility from product architecture, not disc
 ## Citation
 
 Hsieh, A. (2026). *THE GAP: A Neutral Layer Standard for Irreversible Digital Decisions.*
-SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6518398
+Zenodo: https://doi.org/10.5281/zenodo.19437476
 
 ---
 
