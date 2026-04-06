@@ -4,7 +4,7 @@
     "version": "1.0",
     "architecture": "UDIA",
     "fullName": "Universal Decision Irreversibility Architecture",
-    "totalContexts": 81,
+    "totalContexts": 82,
     "layers": 6,
     "license": "CC BY 4.0",
     "neutral_layer_protocol": {
@@ -23,86 +23,743 @@
     "specification_url": "https://github.com/thegap-framework/thegap-framework"
   },
   "contexts": [
-    {"id":"A1-1","layer":1,"layerName":"Data Finality","group":"A1","groupName":"Permanent Deletion","title":"Account Deletion","irreversibilityNote":"Once deleted, all associated data cannot be recovered."},
-    {"id":"A1-2","layer":1,"layerName":"Data Finality","group":"A1","groupName":"Permanent Deletion","title":"Cloud Data Wipe","irreversibilityNote":"Cloud data cleared this way cannot be restored without a separate backup."},
-    {"id":"A1-3","layer":1,"layerName":"Data Finality","group":"A1","groupName":"Permanent Deletion","title":"Chat History Deletion","irreversibilityNote":"Conversation records removed from a platform cannot be recovered."},
-    {"id":"A1-4","layer":1,"layerName":"Data Finality","group":"A1","groupName":"Permanent Deletion","title":"Photo or File Deletion","irreversibilityNote":"Files deleted without a backup are permanently gone and cannot be retrieved."},
-    {"id":"A1-5","layer":1,"layerName":"Data Finality","group":"A1","groupName":"Permanent Deletion","title":"Backup Removal","irreversibilityNote":"Deleting a backup removes the only recovery path for the data it contains."},
-    {"id":"A1-6","layer":1,"layerName":"Data Finality","group":"A1","groupName":"Permanent Deletion","title":"Blockchain Key Destruction","irreversibilityNote":"Once a private key is destroyed, all assets or records it controls are permanently inaccessible."},
-    {"id":"A2-1","layer":1,"layerName":"Data Finality","group":"A2","groupName":"Irreversible Publication","title":"Public Post","irreversibilityNote":"Even if deleted later, public content may have already been seen, shared, or archived."},
-    {"id":"A2-2","layer":1,"layerName":"Data Finality","group":"A2","groupName":"Irreversible Publication","title":"Public Comment","irreversibilityNote":"Comments on public platforms may have been screenshotted before deletion."},
-    {"id":"A2-3","layer":1,"layerName":"Data Finality","group":"A2","groupName":"Irreversible Publication","title":"Video Upload","irreversibilityNote":"Once uploaded, a video can be viewed and downloaded; distribution is outside your control before deletion."},
-    {"id":"A2-4","layer":1,"layerName":"Data Finality","group":"A2","groupName":"Irreversible Publication","title":"Story or Reels Publication","irreversibilityNote":"Short-form content is distributed immediately and may be captured by others before it expires."},
-    {"id":"A2-5","layer":1,"layerName":"Data Finality","group":"A2","groupName":"Irreversible Publication","title":"Anonymous Report Submission","irreversibilityNote":"Once submitted, an anonymous report triggers processes you cannot retract or intervene in."},
-    {"id":"A3-1","layer":1,"layerName":"Data Finality","group":"A3","groupName":"Post-Submission Immutability","title":"Government Form Submission","irreversibilityNote":"Official submissions create formal records; corrections require initiating a separate procedure."},
-    {"id":"A3-2","layer":1,"layerName":"Data Finality","group":"A3","groupName":"Post-Submission Immutability","title":"Job Application Submission","irreversibilityNote":"A submitted application is delivered immediately; withdrawal requires actively contacting the recipient."},
-    {"id":"A3-3","layer":1,"layerName":"Data Finality","group":"A3","groupName":"Post-Submission Immutability","title":"Application Document Submission","irreversibilityNote":"Submitted documents enter a review process that proceeds without further confirmation from you."},
-    {"id":"A3-4","layer":1,"layerName":"Data Finality","group":"A3","groupName":"Post-Submission Immutability","title":"Registration Completion","irreversibilityNote":"Completing registration creates a record and may trigger subsequent obligations or commitments."},
-    {"id":"A3-5","layer":1,"layerName":"Data Finality","group":"A3","groupName":"Post-Submission Immutability","title":"Rating or Review Publication","irreversibilityNote":"Public reviews are immediately visible and may influence others before you have a chance to edit."},
-    {"id":"A4-1","layer":1,"layerName":"Data Finality","group":"A4","groupName":"Cryptographic and Blockchain Commitment","title":"Cryptocurrency Transfer","irreversibilityNote":"Blockchain transactions cannot be reversed. Funds sent to the wrong address cannot be recovered."},
-    {"id":"A4-2","layer":1,"layerName":"Data Finality","group":"A4","groupName":"Cryptographic and Blockchain Commitment","title":"NFT Transaction","irreversibilityNote":"NFT transfers are permanently recorded on the blockchain and cannot be undone."},
-    {"id":"A4-3","layer":1,"layerName":"Data Finality","group":"A4","groupName":"Cryptographic and Blockchain Commitment","title":"Wallet Authorization","irreversibilityNote":"A wallet authorization continues to allow third-party access to your assets until explicitly revoked."},
-    {"id":"A4-4","layer":1,"layerName":"Data Finality","group":"A4","groupName":"Cryptographic and Blockchain Commitment","title":"DAO Vote","irreversibilityNote":"An on-chain vote is final once submitted and cannot be changed or retracted."},
-    {"id":"A4-5","layer":1,"layerName":"Data Finality","group":"A4","groupName":"Cryptographic and Blockchain Commitment","title":"Smart Contract Deployment","irreversibilityNote":"Deployed contracts execute automatically. Code errors cannot be corrected after deployment."},
-    {"id":"B1-1","layer":2,"layerName":"Capital Commitment","group":"B1","groupName":"Payment and Transfer","title":"Bank Transfer","irreversibilityNote":"Bank transfers are processed immediately. Reversal requires the recipient's cooperation."},
-    {"id":"B1-2","layer":2,"layerName":"Capital Commitment","group":"B1","groupName":"Payment and Transfer","title":"International Wire Transfer","irreversibilityNote":"International wires are difficult to recall once processed and may incur additional fees."},
-    {"id":"B1-3","layer":2,"layerName":"Capital Commitment","group":"B1","groupName":"Payment and Transfer","title":"Cryptocurrency Payment","irreversibilityNote":"Cryptocurrency payments are final once confirmed on-chain. There is no chargeback mechanism."},
-    {"id":"B1-4","layer":2,"layerName":"Capital Commitment","group":"B1","groupName":"Payment and Transfer","title":"Impulse Purchase","irreversibilityNote":"Many purchases, especially digital goods, are non-refundable once completed."},
-    {"id":"B1-5","layer":2,"layerName":"Capital Commitment","group":"B1","groupName":"Payment and Transfer","title":"Subscription Activation","irreversibilityNote":"Billing begins immediately upon activation. Cancellation stops future charges but the current period is typically non-refundable."},
-    {"id":"B2-1","layer":2,"layerName":"Capital Commitment","group":"B2","groupName":"Investment and Asset Disposal","title":"Stock or Fund Purchase","irreversibilityNote":"Market orders execute at the current price. The actual transaction price may differ from what you saw."},
-    {"id":"B2-2","layer":2,"layerName":"Capital Commitment","group":"B2","groupName":"Investment and Asset Disposal","title":"Asset Liquidation","irreversibilityNote":"Selling an asset converts it to cash at the current market price; the transaction cannot be undone."},
-    {"id":"B2-3","layer":2,"layerName":"Capital Commitment","group":"B2","groupName":"Investment and Asset Disposal","title":"Early Contract Termination","irreversibilityNote":"Early termination typically incurs penalty fees and forfeits accumulated benefits."},
-    {"id":"B2-4","layer":2,"layerName":"Capital Commitment","group":"B2","groupName":"Investment and Asset Disposal","title":"Insurance Policy Surrender","irreversibilityNote":"Early surrender typically results in lower payouts and terminates future coverage."},
-    {"id":"B2-5","layer":2,"layerName":"Capital Commitment","group":"B2","groupName":"Investment and Asset Disposal","title":"Insurance Policy Cancellation","irreversibilityNote":"Cancellation terminates coverage immediately. Re-enrollment may require new underwriting at higher premiums."},
-    {"id":"B3-1","layer":2,"layerName":"Capital Commitment","group":"B3","groupName":"Long-term Financial Commitment","title":"Long-term Subscription Lock-in","irreversibilityNote":"Multi-year subscriptions lock in payment obligations. Cancellation may not refund the remaining period."},
-    {"id":"B3-2","layer":2,"layerName":"Capital Commitment","group":"B3","groupName":"Long-term Financial Commitment","title":"Service Contract Purchase","irreversibilityNote":"Service contracts create ongoing financial obligations; early exit typically incurs penalty fees."},
-    {"id":"B3-3","layer":2,"layerName":"Capital Commitment","group":"B3","groupName":"Long-term Financial Commitment","title":"Credit Card Authorization","irreversibilityNote":"Charges occur immediately upon authorization. Dispute resolution takes time and is not guaranteed."},
-    {"id":"B3-4","layer":2,"layerName":"Capital Commitment","group":"B3","groupName":"Long-term Financial Commitment","title":"Automatic Payment Setup","irreversibilityNote":"Automatic payments take effect immediately. You must actively track and cancel them when needed."},
-    {"id":"C1-1","layer":3,"layerName":"Identity Transfer","group":"C1","groupName":"Social Relationship Change","title":"Blocking Someone","irreversibilityNote":"Blocking terminates the other party's ability to contact you and may permanently alter the relationship."},
-    {"id":"C1-2","layer":3,"layerName":"Identity Transfer","group":"C1","groupName":"Social Relationship Change","title":"Leaving a Group","irreversibilityNote":"Leaving removes your access to the group's history and may signal a social break to other members."},
-    {"id":"C1-3","layer":3,"layerName":"Identity Transfer","group":"C1","groupName":"Social Relationship Change","title":"Unfollowing or Unfriending","irreversibilityNote":"The other party may notice, and the social relationship between you may change as a result."},
-    {"id":"C1-4","layer":3,"layerName":"Identity Transfer","group":"C1","groupName":"Social Relationship Change","title":"Relationship Status Change","irreversibilityNote":"Publicly changing a relationship status notifies your network and reshapes how others perceive you."},
-    {"id":"C1-5","layer":3,"layerName":"Identity Transfer","group":"C1","groupName":"Social Relationship Change","title":"Public Confession or Declaration","irreversibilityNote":"A public declaration is immediately visible and cannot be fully retracted once seen."},
-    {"id":"C2-1","layer":3,"layerName":"Identity Transfer","group":"C2","groupName":"Emotional Message","title":"Breakup Message","irreversibilityNote":"A message once sent cannot be unsent. The recipient will see it."},
-    {"id":"C2-2","layer":3,"layerName":"Identity Transfer","group":"C2","groupName":"Emotional Message","title":"Apology Message","irreversibilityNote":"An apology once sent redefines the relationship. The recipient will interpret it in their own way."},
-    {"id":"C2-3","layer":3,"layerName":"Identity Transfer","group":"C2","groupName":"Emotional Message","title":"Accusation Message","irreversibilityNote":"An accusation once sent cannot be recalled. Its impact on the relationship is immediate."},
-    {"id":"C2-4","layer":3,"layerName":"Identity Transfer","group":"C2","groupName":"Emotional Message","title":"Threat Message","irreversibilityNote":"A threat once sent cannot be retracted and may produce legal consequences beyond the relationship."},
-    {"id":"C2-5","layer":3,"layerName":"Identity Transfer","group":"C2","groupName":"Emotional Message","title":"Secret Disclosure","irreversibilityNote":"A shared message cannot be recalled. The recipient's knowledge of it is permanent."},
-    {"id":"C3-1","layer":3,"layerName":"Identity Transfer","group":"C3","groupName":"Digital Identity Change","title":"Username or Display Name Change","irreversibilityNote":"Changing an account name breaks links to past records and may confuse people who know you."},
-    {"id":"C3-2","layer":3,"layerName":"Identity Transfer","group":"C3","groupName":"Digital Identity Change","title":"Social Media Account Deletion","irreversibilityNote":"Deleting an account removes your presence and followers. The recovery window is short or nonexistent."},
-    {"id":"C3-3","layer":3,"layerName":"Identity Transfer","group":"C3","groupName":"Digital Identity Change","title":"LinkedIn Profile Removal","irreversibilityNote":"Removing a professional profile erases your public professional record and network connections."},
-    {"id":"C3-4","layer":3,"layerName":"Identity Transfer","group":"C3","groupName":"Digital Identity Change","title":"Dating App Profile Deletion","irreversibilityNote":"Deleting a profile typically also removes match history and conversation records, which cannot be restored."},
-    {"id":"C3-5","layer":3,"layerName":"Identity Transfer","group":"C3","groupName":"Digital Identity Change","title":"Account Switch from Public to Private","irreversibilityNote":"Switching to private immediately removes the account from public search and may affect reach that cannot be recovered."},
-    {"id":"D1-1","layer":4,"layerName":"Legal Binding","group":"D1","groupName":"Electronic Signature","title":"NDA Signing","irreversibilityNote":"Signing an NDA creates legally enforceable confidentiality obligations at the moment of signature."},
-    {"id":"D1-2","layer":4,"layerName":"Legal Binding","group":"D1","groupName":"Electronic Signature","title":"Contract Signing","irreversibilityNote":"Once signed, you are bound by the contract's terms. Termination requires the other party's agreement or legal process."},
-    {"id":"D1-3","layer":4,"layerName":"Legal Binding","group":"D1","groupName":"Electronic Signature","title":"Confidentiality Agreement Signing","irreversibilityNote":"Signing creates immediate and irrevocable confidentiality obligations."},
-    {"id":"D1-4","layer":4,"layerName":"Legal Binding","group":"D1","groupName":"Electronic Signature","title":"Non-compete Clause Signing","irreversibilityNote":"Signing a non-compete restricts your future employment options for the specified period."},
-    {"id":"D2-1","layer":4,"layerName":"Legal Binding","group":"D2","groupName":"Legal Document Submission","title":"Tax Filing","irreversibilityNote":"A filed tax return creates an official record. Corrections require a formal amendment procedure."},
-    {"id":"D2-2","layer":4,"layerName":"Legal Binding","group":"D2","groupName":"Legal Document Submission","title":"Company Incorporation","irreversibilityNote":"Incorporation creates a legal entity with obligations. Dissolution is a separate formal procedure."},
-    {"id":"D2-3","layer":4,"layerName":"Legal Binding","group":"D2","groupName":"Legal Document Submission","title":"Trademark Application","irreversibilityNote":"An application enters the public record and incurs fees regardless of the final outcome."},
-    {"id":"D2-4","layer":4,"layerName":"Legal Binding","group":"D2","groupName":"Legal Document Submission","title":"Patent Application","irreversibilityNote":"A patent application publicly discloses your invention after 18 months and cannot be withdrawn."},
-    {"id":"D3-1","layer":4,"layerName":"Legal Binding","group":"D3","groupName":"Litigation and Reporting","title":"Filing a Lawsuit","irreversibilityNote":"Filing a lawsuit initiates formal proceedings; withdrawal midway is difficult and costly."},
-    {"id":"D3-2","layer":4,"layerName":"Legal Binding","group":"D3","groupName":"Litigation and Reporting","title":"Reporting an Account or Content","irreversibilityNote":"A submitted report triggers a platform review process that proceeds independently of you."},
-    {"id":"D3-3","layer":4,"layerName":"Legal Binding","group":"D3","groupName":"Litigation and Reporting","title":"Formal Complaint Against a Company","irreversibilityNote":"A formal complaint creates a record and initiates processes that affect the other party."},
-    {"id":"D3-4","layer":4,"layerName":"Legal Binding","group":"D3","groupName":"Litigation and Reporting","title":"Testimony or Formal Statement Submission","irreversibilityNote":"Submitted testimony enters the official record; corrections require formal procedure."},
-    {"id":"E1-1","layer":5,"layerName":"Medical Commitment","group":"E1","groupName":"Medical Consent","title":"Surgical Consent Form Signing","irreversibilityNote":"Signing a surgical consent form authorizes a procedure with physical effects that cannot be fully reversed."},
-    {"id":"E1-2","layer":5,"layerName":"Medical Commitment","group":"E1","groupName":"Medical Consent","title":"Medical Data Sharing Authorization","irreversibilityNote":"Medical data transmitted to a recipient cannot be recalled from that recipient."},
-    {"id":"E1-3","layer":5,"layerName":"Medical Commitment","group":"E1","groupName":"Medical Consent","title":"Diagnostic Report Upload","irreversibilityNote":"Uploaded health records enter systems from which you may not be able to fully remove them."},
-    {"id":"E2-1","layer":5,"layerName":"Medical Commitment","group":"E2","groupName":"Long-term Health Commitment","title":"Treatment Initiation","irreversibilityNote":"Starting a treatment creates a medical record and may have physiological effects that accumulate over time."},
-    {"id":"E2-2","layer":5,"layerName":"Medical Commitment","group":"E2","groupName":"Long-term Health Commitment","title":"Treatment Discontinuation","irreversibilityNote":"Stopping treatment may have medical consequences. The interruption record becomes part of your health history."},
-    {"id":"E2-3","layer":5,"layerName":"Medical Commitment","group":"E2","groupName":"Long-term Health Commitment","title":"Organ Donation Registration","irreversibilityNote":"Donation registration is a formal record. Cancellation requires an explicit withdrawal procedure."},
-    {"id":"F1-1","layer":6,"layerName":"Emergent Autonomy","group":"F1","groupName":"AI Agent Authorization","title":"Granting AI Purchase Authority","irreversibilityNote":"Once an AI agent is authorized to purchase on your behalf, transactions can occur without further confirmation from you."},
-    {"id":"F1-2","layer":6,"layerName":"Emergent Autonomy","group":"F1","groupName":"AI Agent Authorization","title":"Granting AI Social Media Posting Authority","irreversibilityNote":"Content published by an AI agent on your behalf is public under your name and cannot be pre-reviewed."},
-    {"id":"F1-3","layer":6,"layerName":"Emergent Autonomy","group":"F1","groupName":"AI Agent Authorization","title":"Automated Trading Activation","irreversibilityNote":"Automated trading executes continuously without requiring your confirmation for each transaction."},
-    {"id":"F2-1","layer":6,"layerName":"Emergent Autonomy","group":"F2","groupName":"Digital Estate","title":"Legacy Contact Assignment","irreversibilityNote":"The assigned legacy contact will be able to access your digital presence after your death."},
-    {"id":"F2-2","layer":6,"layerName":"Emergent Autonomy","group":"F2","groupName":"Digital Estate","title":"Digital Will Creation","irreversibilityNote":"A digital will specifies how your accounts are handled after death. Modification requires creating a new document."},
-    {"id":"F2-3","layer":6,"layerName":"Emergent Autonomy","group":"F2","groupName":"Digital Estate","title":"Account Heir Designation","irreversibilityNote":"An account heir designation transfers control of your assets to another person when trigger conditions are met."},
-    {"id":"F3-1","layer":6,"layerName":"Emergent Autonomy","group":"F3","groupName":"Biometric Binding","title":"Facial Recognition Binding","irreversibilityNote":"Biometric data bound to an account, once registered, cannot be completely deleted from all systems."},
-    {"id":"F3-2","layer":6,"layerName":"Emergent Autonomy","group":"F3","groupName":"Biometric Binding","title":"Permanent Identity Verification Enrollment","irreversibilityNote":"Permanent identity binding links your physical identity to a digital system and is difficult to revoke."},
-    {"id":"F4-1","layer":6,"layerName":"Emergent Autonomy","group":"F4","groupName":"AI Companion and Relationship","title":"AI Companion Deletion","irreversibilityNote":"Deleting an AI companion removes all conversation history and the accumulated understanding it has built of you."},
-    {"id":"F4-2","layer":6,"layerName":"Emergent Autonomy","group":"F4","groupName":"AI Companion and Relationship","title":"Sharing Sensitive Personal Data with an AI System","irreversibilityNote":"Data shared with an AI system may be used for training and cannot be fully recalled."},
-    {"id":"F4-3","layer":6,"layerName":"Emergent Autonomy","group":"F4","groupName":"AI Companion and Relationship","title":"Granting AI Agent Access to Personal Accounts","irreversibilityNote":"Once an AI agent has account access, it can act on your behalf across all connected services."},
-    {"id":"F5-1","layer":6,"layerName":"Emergent Autonomy","group":"F5","groupName":"Autonomous System Commitment","title":"Autonomous Agent Deployment","irreversibilityNote":"A deployed autonomous agent begins acting independently. Its actions may be difficult to trace or reverse."},
-    {"id":"F5-2","layer":6,"layerName":"Emergent Autonomy","group":"F5","groupName":"Autonomous System Commitment","title":"Irreversible Digital Asset Ownership Transfer","irreversibilityNote":"Digital asset ownership transferred on a blockchain is permanent and requires the recipient's active return."}
+    {
+      "id": "A1-1",
+      "layer": 1,
+      "layerName": "Data Finality",
+      "group": "A1",
+      "groupName": "Permanent Deletion",
+      "title": "Account Deletion",
+      "irreversibilityNote": "Once deleted, all associated data cannot be recovered."
+    },
+    {
+      "id": "A1-2",
+      "layer": 1,
+      "layerName": "Data Finality",
+      "group": "A1",
+      "groupName": "Permanent Deletion",
+      "title": "Cloud Data Wipe",
+      "irreversibilityNote": "Cloud data cleared this way cannot be restored without a separate backup."
+    },
+    {
+      "id": "A1-3",
+      "layer": 1,
+      "layerName": "Data Finality",
+      "group": "A1",
+      "groupName": "Permanent Deletion",
+      "title": "Chat History Deletion",
+      "irreversibilityNote": "Conversation records removed from a platform cannot be recovered."
+    },
+    {
+      "id": "A1-4",
+      "layer": 1,
+      "layerName": "Data Finality",
+      "group": "A1",
+      "groupName": "Permanent Deletion",
+      "title": "Photo or File Deletion",
+      "irreversibilityNote": "Files deleted without a backup are permanently gone and cannot be retrieved."
+    },
+    {
+      "id": "A1-5",
+      "layer": 1,
+      "layerName": "Data Finality",
+      "group": "A1",
+      "groupName": "Permanent Deletion",
+      "title": "Backup Removal",
+      "irreversibilityNote": "Deleting a backup removes the only recovery path for the data it contains."
+    },
+    {
+      "id": "A1-6",
+      "layer": 1,
+      "layerName": "Data Finality",
+      "group": "A1",
+      "groupName": "Permanent Deletion",
+      "title": "Blockchain Key Destruction",
+      "irreversibilityNote": "Once a private key is destroyed, all assets or records it controls are permanently inaccessible."
+    },
+    {
+      "id": "A2-1",
+      "layer": 1,
+      "layerName": "Data Finality",
+      "group": "A2",
+      "groupName": "Irreversible Publication",
+      "title": "Public Post",
+      "irreversibilityNote": "Even if deleted later, public content may have already been seen, shared, or archived."
+    },
+    {
+      "id": "A2-2",
+      "layer": 1,
+      "layerName": "Data Finality",
+      "group": "A2",
+      "groupName": "Irreversible Publication",
+      "title": "Public Comment",
+      "irreversibilityNote": "Comments on public platforms may have been screenshotted before deletion."
+    },
+    {
+      "id": "A2-3",
+      "layer": 1,
+      "layerName": "Data Finality",
+      "group": "A2",
+      "groupName": "Irreversible Publication",
+      "title": "Video Upload",
+      "irreversibilityNote": "Once uploaded, a video can be viewed and downloaded; distribution is outside your control before deletion."
+    },
+    {
+      "id": "A2-4",
+      "layer": 1,
+      "layerName": "Data Finality",
+      "group": "A2",
+      "groupName": "Irreversible Publication",
+      "title": "Story or Reels Publication",
+      "irreversibilityNote": "Short-form content is distributed immediately and may be captured by others before it expires."
+    },
+    {
+      "id": "A2-5",
+      "layer": 1,
+      "layerName": "Data Finality",
+      "group": "A2",
+      "groupName": "Irreversible Publication",
+      "title": "Anonymous Report Submission",
+      "irreversibilityNote": "Once submitted, an anonymous report triggers processes you cannot retract or intervene in."
+    },
+    {
+      "id": "A3-1",
+      "layer": 1,
+      "layerName": "Data Finality",
+      "group": "A3",
+      "groupName": "Post-Submission Immutability",
+      "title": "Government Form Submission",
+      "irreversibilityNote": "Official submissions create formal records; corrections require initiating a separate procedure."
+    },
+    {
+      "id": "A3-2",
+      "layer": 1,
+      "layerName": "Data Finality",
+      "group": "A3",
+      "groupName": "Post-Submission Immutability",
+      "title": "Job Application Submission",
+      "irreversibilityNote": "A submitted application is delivered immediately; withdrawal requires actively contacting the recipient."
+    },
+    {
+      "id": "A3-3",
+      "layer": 1,
+      "layerName": "Data Finality",
+      "group": "A3",
+      "groupName": "Post-Submission Immutability",
+      "title": "Application Document Submission",
+      "irreversibilityNote": "Submitted documents enter a review process that proceeds without further confirmation from you."
+    },
+    {
+      "id": "A3-4",
+      "layer": 1,
+      "layerName": "Data Finality",
+      "group": "A3",
+      "groupName": "Post-Submission Immutability",
+      "title": "Registration Completion",
+      "irreversibilityNote": "Completing registration creates a record and may trigger subsequent obligations or commitments."
+    },
+    {
+      "id": "A3-5",
+      "layer": 1,
+      "layerName": "Data Finality",
+      "group": "A3",
+      "groupName": "Post-Submission Immutability",
+      "title": "Rating or Review Publication",
+      "irreversibilityNote": "Public reviews are immediately visible and may influence others before you have a chance to edit."
+    },
+    {
+      "id": "A4-1",
+      "layer": 1,
+      "layerName": "Data Finality",
+      "group": "A4",
+      "groupName": "Cryptographic and Blockchain Commitment",
+      "title": "Cryptocurrency Transfer",
+      "irreversibilityNote": "Blockchain transactions cannot be reversed. Funds sent to the wrong address cannot be recovered."
+    },
+    {
+      "id": "A4-2",
+      "layer": 1,
+      "layerName": "Data Finality",
+      "group": "A4",
+      "groupName": "Cryptographic and Blockchain Commitment",
+      "title": "NFT Transaction",
+      "irreversibilityNote": "NFT transfers are permanently recorded on the blockchain and cannot be undone."
+    },
+    {
+      "id": "A4-3",
+      "layer": 1,
+      "layerName": "Data Finality",
+      "group": "A4",
+      "groupName": "Cryptographic and Blockchain Commitment",
+      "title": "Wallet Authorization",
+      "irreversibilityNote": "A wallet authorization continues to allow third-party access to your assets until explicitly revoked."
+    },
+    {
+      "id": "A4-4",
+      "layer": 1,
+      "layerName": "Data Finality",
+      "group": "A4",
+      "groupName": "Cryptographic and Blockchain Commitment",
+      "title": "DAO Vote",
+      "irreversibilityNote": "An on-chain vote is final once submitted and cannot be changed or retracted."
+    },
+    {
+      "id": "A4-5",
+      "layer": 1,
+      "layerName": "Data Finality",
+      "group": "A4",
+      "groupName": "Cryptographic and Blockchain Commitment",
+      "title": "Smart Contract Deployment",
+      "irreversibilityNote": "Deployed contracts execute automatically. Code errors cannot be corrected after deployment."
+    },
+    {
+      "id": "B1-1",
+      "layer": 2,
+      "layerName": "Capital Commitment",
+      "group": "B1",
+      "groupName": "Payment and Transfer",
+      "title": "Bank Transfer",
+      "irreversibilityNote": "Bank transfers are processed immediately. Reversal requires the recipient's cooperation."
+    },
+    {
+      "id": "B1-2",
+      "layer": 2,
+      "layerName": "Capital Commitment",
+      "group": "B1",
+      "groupName": "Payment and Transfer",
+      "title": "International Wire Transfer",
+      "irreversibilityNote": "International wires are difficult to recall once processed and may incur additional fees."
+    },
+    {
+      "id": "B1-3",
+      "layer": 2,
+      "layerName": "Capital Commitment",
+      "group": "B1",
+      "groupName": "Payment and Transfer",
+      "title": "Cryptocurrency Payment",
+      "irreversibilityNote": "Cryptocurrency payments are final once confirmed on-chain. There is no chargeback mechanism."
+    },
+    {
+      "id": "B1-4",
+      "layer": 2,
+      "layerName": "Capital Commitment",
+      "group": "B1",
+      "groupName": "Payment and Transfer",
+      "title": "Impulse Purchase",
+      "irreversibilityNote": "Many purchases, especially digital goods, are non-refundable once completed."
+    },
+    {
+      "id": "B1-5",
+      "layer": 2,
+      "layerName": "Capital Commitment",
+      "group": "B1",
+      "groupName": "Payment and Transfer",
+      "title": "Subscription Activation",
+      "irreversibilityNote": "Billing begins immediately upon activation. Cancellation stops future charges but the current period is typically non-refundable."
+    },
+    {
+      "id": "B2-1",
+      "layer": 2,
+      "layerName": "Capital Commitment",
+      "group": "B2",
+      "groupName": "Investment and Asset Disposal",
+      "title": "Stock or Fund Purchase",
+      "irreversibilityNote": "Market orders execute at the current price. The actual transaction price may differ from what you saw."
+    },
+    {
+      "id": "B2-2",
+      "layer": 2,
+      "layerName": "Capital Commitment",
+      "group": "B2",
+      "groupName": "Investment and Asset Disposal",
+      "title": "Asset Liquidation",
+      "irreversibilityNote": "Selling an asset converts it to cash at the current market price; the transaction cannot be undone."
+    },
+    {
+      "id": "B2-3",
+      "layer": 2,
+      "layerName": "Capital Commitment",
+      "group": "B2",
+      "groupName": "Investment and Asset Disposal",
+      "title": "Early Contract Termination",
+      "irreversibilityNote": "Early termination typically incurs penalty fees and forfeits accumulated benefits."
+    },
+    {
+      "id": "B2-4",
+      "layer": 2,
+      "layerName": "Capital Commitment",
+      "group": "B2",
+      "groupName": "Investment and Asset Disposal",
+      "title": "Insurance Policy Surrender",
+      "irreversibilityNote": "Early surrender typically results in lower payouts and terminates future coverage."
+    },
+    {
+      "id": "B2-5",
+      "layer": 2,
+      "layerName": "Capital Commitment",
+      "group": "B2",
+      "groupName": "Investment and Asset Disposal",
+      "title": "Insurance Policy Cancellation",
+      "irreversibilityNote": "Cancellation terminates coverage immediately. Re-enrollment may require new underwriting at higher premiums."
+    },
+    {
+      "id": "B3-1",
+      "layer": 2,
+      "layerName": "Capital Commitment",
+      "group": "B3",
+      "groupName": "Long-term Financial Commitment",
+      "title": "Long-term Subscription Lock-in",
+      "irreversibilityNote": "Multi-year subscriptions lock in payment obligations. Cancellation may not refund the remaining period."
+    },
+    {
+      "id": "B3-2",
+      "layer": 2,
+      "layerName": "Capital Commitment",
+      "group": "B3",
+      "groupName": "Long-term Financial Commitment",
+      "title": "Service Contract Purchase",
+      "irreversibilityNote": "Service contracts create ongoing financial obligations; early exit typically incurs penalty fees."
+    },
+    {
+      "id": "B3-3",
+      "layer": 2,
+      "layerName": "Capital Commitment",
+      "group": "B3",
+      "groupName": "Long-term Financial Commitment",
+      "title": "Credit Card Authorization",
+      "irreversibilityNote": "Charges occur immediately upon authorization. Dispute resolution takes time and is not guaranteed."
+    },
+    {
+      "id": "B3-4",
+      "layer": 2,
+      "layerName": "Capital Commitment",
+      "group": "B3",
+      "groupName": "Long-term Financial Commitment",
+      "title": "Automatic Payment Setup",
+      "irreversibilityNote": "Automatic payments take effect immediately. You must actively track and cancel them when needed."
+    },
+    {
+      "id": "C1-1",
+      "layer": 3,
+      "layerName": "Identity Transfer",
+      "group": "C1",
+      "groupName": "Emotional Message",
+      "title": "Contacting an Ex",
+      "irreversibilityNote": "Reopening a closed communication channel changes the relationship state. The other party's response — or silence — is irreversible once the message is seen."
+    },
+    {
+      "id": "C1-2",
+      "layer": 3,
+      "layerName": "Identity Transfer",
+      "group": "C1",
+      "groupName": "Emotional Message",
+      "title": "Breakup Message",
+      "irreversibilityNote": "A message once sent cannot be unsent. The recipient will see it."
+    },
+    {
+      "id": "C1-3",
+      "layer": 3,
+      "layerName": "Identity Transfer",
+      "group": "C1",
+      "groupName": "Emotional Message",
+      "title": "Apology Message",
+      "irreversibilityNote": "An apology once sent redefines the relationship. The recipient will interpret it in their own way."
+    },
+    {
+      "id": "C1-4",
+      "layer": 3,
+      "layerName": "Identity Transfer",
+      "group": "C1",
+      "groupName": "Emotional Message",
+      "title": "Accusation Message",
+      "irreversibilityNote": "An accusation once sent cannot be recalled. Its impact on the relationship is immediate."
+    },
+    {
+      "id": "C1-5",
+      "layer": 3,
+      "layerName": "Identity Transfer",
+      "group": "C1",
+      "groupName": "Emotional Message",
+      "title": "Threat Message",
+      "irreversibilityNote": "A threat once sent cannot be retracted and may produce legal consequences beyond the relationship."
+    },
+    {
+      "id": "C1-6",
+      "layer": 3,
+      "layerName": "Identity Transfer",
+      "group": "C1",
+      "groupName": "Emotional Message",
+      "title": "Secret Disclosure",
+      "irreversibilityNote": "A shared message cannot be recalled. The recipient's knowledge of it is permanent."
+    },
+    {
+      "id": "C2-1",
+      "layer": 3,
+      "layerName": "Identity Transfer",
+      "group": "C2",
+      "groupName": "Social Relationship Change",
+      "title": "Blocking Someone",
+      "irreversibilityNote": "Blocking terminates the other party's ability to contact you and may permanently alter the relationship."
+    },
+    {
+      "id": "C2-2",
+      "layer": 3,
+      "layerName": "Identity Transfer",
+      "group": "C2",
+      "groupName": "Social Relationship Change",
+      "title": "Leaving a Group",
+      "irreversibilityNote": "Leaving removes your access to the group's history and may signal a social break to other members."
+    },
+    {
+      "id": "C2-3",
+      "layer": 3,
+      "layerName": "Identity Transfer",
+      "group": "C2",
+      "groupName": "Social Relationship Change",
+      "title": "Unfollowing or Unfriending",
+      "irreversibilityNote": "The other party may notice, and the social relationship between you may change as a result."
+    },
+    {
+      "id": "C2-4",
+      "layer": 3,
+      "layerName": "Identity Transfer",
+      "group": "C2",
+      "groupName": "Social Relationship Change",
+      "title": "Relationship Status Change",
+      "irreversibilityNote": "Publicly changing a relationship status notifies your network and reshapes how others perceive you."
+    },
+    {
+      "id": "C2-5",
+      "layer": 3,
+      "layerName": "Identity Transfer",
+      "group": "C2",
+      "groupName": "Social Relationship Change",
+      "title": "Public Confession or Declaration",
+      "irreversibilityNote": "A public declaration is immediately visible and cannot be fully retracted once seen."
+    },
+    {
+      "id": "C3-1",
+      "layer": 3,
+      "layerName": "Identity Transfer",
+      "group": "C3",
+      "groupName": "Digital Identity Change",
+      "title": "Username or Display Name Change",
+      "irreversibilityNote": "Changing an account name breaks links to past records and may confuse people who know you."
+    },
+    {
+      "id": "C3-2",
+      "layer": 3,
+      "layerName": "Identity Transfer",
+      "group": "C3",
+      "groupName": "Digital Identity Change",
+      "title": "Social Media Account Deletion",
+      "irreversibilityNote": "Deleting an account removes your presence and followers. The recovery window is short or nonexistent."
+    },
+    {
+      "id": "C3-3",
+      "layer": 3,
+      "layerName": "Identity Transfer",
+      "group": "C3",
+      "groupName": "Digital Identity Change",
+      "title": "LinkedIn Profile Removal",
+      "irreversibilityNote": "Removing a professional profile erases your public professional record and network connections."
+    },
+    {
+      "id": "C3-4",
+      "layer": 3,
+      "layerName": "Identity Transfer",
+      "group": "C3",
+      "groupName": "Digital Identity Change",
+      "title": "Dating App Profile Deletion",
+      "irreversibilityNote": "Deleting a profile typically also removes match history and conversation records, which cannot be restored."
+    },
+    {
+      "id": "C3-5",
+      "layer": 3,
+      "layerName": "Identity Transfer",
+      "group": "C3",
+      "groupName": "Digital Identity Change",
+      "title": "Account Switch from Public to Private",
+      "irreversibilityNote": "Switching to private immediately removes the account from public search and may affect reach that cannot be recovered."
+    },
+    {
+      "id": "D1-1",
+      "layer": 4,
+      "layerName": "Legal Binding",
+      "group": "D1",
+      "groupName": "Electronic Signature",
+      "title": "NDA Signing",
+      "irreversibilityNote": "Signing an NDA creates legally enforceable confidentiality obligations at the moment of signature."
+    },
+    {
+      "id": "D1-2",
+      "layer": 4,
+      "layerName": "Legal Binding",
+      "group": "D1",
+      "groupName": "Electronic Signature",
+      "title": "Contract Signing",
+      "irreversibilityNote": "Once signed, you are bound by the contract's terms. Termination requires the other party's agreement or legal process."
+    },
+    {
+      "id": "D1-3",
+      "layer": 4,
+      "layerName": "Legal Binding",
+      "group": "D1",
+      "groupName": "Electronic Signature",
+      "title": "Confidentiality Agreement Signing",
+      "irreversibilityNote": "Signing creates immediate and irrevocable confidentiality obligations."
+    },
+    {
+      "id": "D1-4",
+      "layer": 4,
+      "layerName": "Legal Binding",
+      "group": "D1",
+      "groupName": "Electronic Signature",
+      "title": "Non-compete Clause Signing",
+      "irreversibilityNote": "Signing a non-compete restricts your future employment options for the specified period."
+    },
+    {
+      "id": "D2-1",
+      "layer": 4,
+      "layerName": "Legal Binding",
+      "group": "D2",
+      "groupName": "Legal Document Submission",
+      "title": "Tax Filing",
+      "irreversibilityNote": "A filed tax return creates an official record. Corrections require a formal amendment procedure."
+    },
+    {
+      "id": "D2-2",
+      "layer": 4,
+      "layerName": "Legal Binding",
+      "group": "D2",
+      "groupName": "Legal Document Submission",
+      "title": "Company Incorporation",
+      "irreversibilityNote": "Incorporation creates a legal entity with obligations. Dissolution is a separate formal procedure."
+    },
+    {
+      "id": "D2-3",
+      "layer": 4,
+      "layerName": "Legal Binding",
+      "group": "D2",
+      "groupName": "Legal Document Submission",
+      "title": "Trademark Application",
+      "irreversibilityNote": "An application enters the public record and incurs fees regardless of the final outcome."
+    },
+    {
+      "id": "D2-4",
+      "layer": 4,
+      "layerName": "Legal Binding",
+      "group": "D2",
+      "groupName": "Legal Document Submission",
+      "title": "Patent Application",
+      "irreversibilityNote": "A patent application publicly discloses your invention after 18 months and cannot be withdrawn."
+    },
+    {
+      "id": "D3-1",
+      "layer": 4,
+      "layerName": "Legal Binding",
+      "group": "D3",
+      "groupName": "Litigation and Reporting",
+      "title": "Filing a Lawsuit",
+      "irreversibilityNote": "Filing a lawsuit initiates formal proceedings; withdrawal midway is difficult and costly."
+    },
+    {
+      "id": "D3-2",
+      "layer": 4,
+      "layerName": "Legal Binding",
+      "group": "D3",
+      "groupName": "Litigation and Reporting",
+      "title": "Reporting an Account or Content",
+      "irreversibilityNote": "A submitted report triggers a platform review process that proceeds independently of you."
+    },
+    {
+      "id": "D3-3",
+      "layer": 4,
+      "layerName": "Legal Binding",
+      "group": "D3",
+      "groupName": "Litigation and Reporting",
+      "title": "Formal Complaint Against a Company",
+      "irreversibilityNote": "A formal complaint creates a record and initiates processes that affect the other party."
+    },
+    {
+      "id": "D3-4",
+      "layer": 4,
+      "layerName": "Legal Binding",
+      "group": "D3",
+      "groupName": "Litigation and Reporting",
+      "title": "Testimony or Formal Statement Submission",
+      "irreversibilityNote": "Submitted testimony enters the official record; corrections require formal procedure."
+    },
+    {
+      "id": "E1-1",
+      "layer": 5,
+      "layerName": "Medical Commitment",
+      "group": "E1",
+      "groupName": "Medical Consent",
+      "title": "Surgical Consent Form Signing",
+      "irreversibilityNote": "Signing a surgical consent form authorizes a procedure with physical effects that cannot be fully reversed."
+    },
+    {
+      "id": "E1-2",
+      "layer": 5,
+      "layerName": "Medical Commitment",
+      "group": "E1",
+      "groupName": "Medical Consent",
+      "title": "Medical Data Sharing Authorization",
+      "irreversibilityNote": "Medical data transmitted to a recipient cannot be recalled from that recipient."
+    },
+    {
+      "id": "E1-3",
+      "layer": 5,
+      "layerName": "Medical Commitment",
+      "group": "E1",
+      "groupName": "Medical Consent",
+      "title": "Diagnostic Report Upload",
+      "irreversibilityNote": "Uploaded health records enter systems from which you may not be able to fully remove them."
+    },
+    {
+      "id": "E2-1",
+      "layer": 5,
+      "layerName": "Medical Commitment",
+      "group": "E2",
+      "groupName": "Long-term Health Commitment",
+      "title": "Treatment Initiation",
+      "irreversibilityNote": "Starting a treatment creates a medical record and may have physiological effects that accumulate over time."
+    },
+    {
+      "id": "E2-2",
+      "layer": 5,
+      "layerName": "Medical Commitment",
+      "group": "E2",
+      "groupName": "Long-term Health Commitment",
+      "title": "Treatment Discontinuation",
+      "irreversibilityNote": "Stopping treatment may have medical consequences. The interruption record becomes part of your health history."
+    },
+    {
+      "id": "E2-3",
+      "layer": 5,
+      "layerName": "Medical Commitment",
+      "group": "E2",
+      "groupName": "Long-term Health Commitment",
+      "title": "Organ Donation Registration",
+      "irreversibilityNote": "Donation registration is a formal record. Cancellation requires an explicit withdrawal procedure."
+    },
+    {
+      "id": "F1-1",
+      "layer": 6,
+      "layerName": "Emergent Autonomy",
+      "group": "F1",
+      "groupName": "AI Agent Authorization",
+      "title": "Granting AI Purchase Authority",
+      "irreversibilityNote": "Once an AI agent is authorized to purchase on your behalf, transactions can occur without further confirmation from you."
+    },
+    {
+      "id": "F1-2",
+      "layer": 6,
+      "layerName": "Emergent Autonomy",
+      "group": "F1",
+      "groupName": "AI Agent Authorization",
+      "title": "Granting AI Social Media Posting Authority",
+      "irreversibilityNote": "Content published by an AI agent on your behalf is public under your name and cannot be pre-reviewed."
+    },
+    {
+      "id": "F1-3",
+      "layer": 6,
+      "layerName": "Emergent Autonomy",
+      "group": "F1",
+      "groupName": "AI Agent Authorization",
+      "title": "Automated Trading Activation",
+      "irreversibilityNote": "Automated trading executes continuously without requiring your confirmation for each transaction."
+    },
+    {
+      "id": "F2-1",
+      "layer": 6,
+      "layerName": "Emergent Autonomy",
+      "group": "F2",
+      "groupName": "Digital Estate",
+      "title": "Legacy Contact Assignment",
+      "irreversibilityNote": "The assigned legacy contact will be able to access your digital presence after your death."
+    },
+    {
+      "id": "F2-2",
+      "layer": 6,
+      "layerName": "Emergent Autonomy",
+      "group": "F2",
+      "groupName": "Digital Estate",
+      "title": "Digital Will Creation",
+      "irreversibilityNote": "A digital will specifies how your accounts are handled after death. Modification requires creating a new document."
+    },
+    {
+      "id": "F2-3",
+      "layer": 6,
+      "layerName": "Emergent Autonomy",
+      "group": "F2",
+      "groupName": "Digital Estate",
+      "title": "Account Heir Designation",
+      "irreversibilityNote": "An account heir designation transfers control of your assets to another person when trigger conditions are met."
+    },
+    {
+      "id": "F3-1",
+      "layer": 6,
+      "layerName": "Emergent Autonomy",
+      "group": "F3",
+      "groupName": "Biometric Binding",
+      "title": "Facial Recognition Binding",
+      "irreversibilityNote": "Biometric data bound to an account, once registered, cannot be completely deleted from all systems."
+    },
+    {
+      "id": "F3-2",
+      "layer": 6,
+      "layerName": "Emergent Autonomy",
+      "group": "F3",
+      "groupName": "Biometric Binding",
+      "title": "Permanent Identity Verification Enrollment",
+      "irreversibilityNote": "Permanent identity binding links your physical identity to a digital system and is difficult to revoke."
+    },
+    {
+      "id": "F4-1",
+      "layer": 6,
+      "layerName": "Emergent Autonomy",
+      "group": "F4",
+      "groupName": "AI Companion and Relationship",
+      "title": "AI Companion Deletion",
+      "irreversibilityNote": "Deleting an AI companion removes all conversation history and the accumulated understanding it has built of you."
+    },
+    {
+      "id": "F4-2",
+      "layer": 6,
+      "layerName": "Emergent Autonomy",
+      "group": "F4",
+      "groupName": "AI Companion and Relationship",
+      "title": "Sharing Sensitive Personal Data with an AI System",
+      "irreversibilityNote": "Data shared with an AI system may be used for training and cannot be fully recalled."
+    },
+    {
+      "id": "F4-3",
+      "layer": 6,
+      "layerName": "Emergent Autonomy",
+      "group": "F4",
+      "groupName": "AI Companion and Relationship",
+      "title": "Granting AI Agent Access to Personal Accounts",
+      "irreversibilityNote": "Once an AI agent has account access, it can act on your behalf across all connected services."
+    },
+    {
+      "id": "F5-1",
+      "layer": 6,
+      "layerName": "Emergent Autonomy",
+      "group": "F5",
+      "groupName": "Autonomous System Commitment",
+      "title": "Autonomous Agent Deployment",
+      "irreversibilityNote": "A deployed autonomous agent begins acting independently. Its actions may be difficult to trace or reverse."
+    },
+    {
+      "id": "F5-2",
+      "layer": 6,
+      "layerName": "Emergent Autonomy",
+      "group": "F5",
+      "groupName": "Autonomous System Commitment",
+      "title": "Irreversible Digital Asset Ownership Transfer",
+      "irreversibilityNote": "Digital asset ownership transferred on a blockchain is permanent and requires the recipient's active return."
+    }
   ]
 }
