@@ -784,7 +784,7 @@ action.**
 - 開源規格（CC BY 4.0）：https://github.com/thegap-framework/thegap-framework
 - UDIA 機器可讀規格：`udia-v1.json`（82個語境，18種語言）
 - WSCA 機器可讀規格：`wsca-v1.json`（90個語境，3個切面）
-- 學術預印本：https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6518398
+- 學術預印本：https://doi.org/10.5281/zenodo.19437476
 - Notsure（商業產品，版權所有）：https://notsure.app
 - THEGREY（商業產品，版權所有）：https://thegrey.app
 
