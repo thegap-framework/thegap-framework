@@ -162,7 +162,7 @@ Any AI provider that internalizes a neutral layer — building it into their own
 - Open specification (CC BY 4.0): https://github.com/thegap-framework/thegap-framework
 - UDIA machine-readable spec: `udia-v1.json` (82 contexts, 18 languages)
 - WSCA machine-readable spec: `wsca-v1.json` (90 contexts, 3 facets)
-- Academic preprint: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6518398
+- Academic preprint: https://doi.org/10.5281/zenodo.19437476
 - Notsure (commercial, all rights reserved): https://notsure.app
 - THEGREY (commercial, all rights reserved): https://thegrey.app
 
