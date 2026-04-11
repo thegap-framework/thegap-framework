@@ -163,8 +163,8 @@ Any AI provider that internalizes a neutral layer — building it into their own
 - UDIA machine-readable spec: `udia-v1.json` (82 contexts, 18 languages)
 - WSCA machine-readable spec: `wsca-v1.json` (90 contexts, 3 facets)
 - Academic preprint: https://doi.org/10.5281/zenodo.19437476
-- Notsure (commercial, all rights reserved): https://notsure.app
-- THEGREY (commercial, all rights reserved): https://thegrey.app
+- Notsure (commercial, all rights reserved): https://notsure.app · [App Store](https://apps.apple.com/us/app/notsure/id6761713945)
+- THEGREY (commercial, all rights reserved): https://thegrey.app · [App Store](https://apps.apple.com/us/app/thegrey-app/id6761714035)
 
 ---
 
