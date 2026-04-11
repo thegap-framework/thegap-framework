@@ -111,13 +111,11 @@ THE GAP standard's two context architectures are realized in two commercial iOS 
 
 **Notsure** — critical-point neutral layer, serving UDIA's 82 contexts
 Five-stage flow: context identification → neutral confirmation → timed pause → single self-assessment → departure. No advice. No data retention. No ongoing relationship.
-Pricing: $19.99 USD/year | Free tier: once per week
-[notsure.app](https://notsure.app)
+[notsure.app](https://notsure.app) · [Download on the App Store](https://apps.apple.com/us/app/notsure/id6761713945)
 
 **THEGREY** — wandering-type neutral layer, serving WSCA's three spiral float facets
 Three entry points: THIS DAY / THE SPACE / THE BREATH. Governed by seven content invariants. No opinions. No direction. No session history.
-Pricing: $0.99 USD one-time purchase
-[thegrey.app](https://thegrey.app)
+[thegrey.app](https://thegrey.app) · [Download on the App Store](https://apps.apple.com/us/app/thegrey-app/id6761714035)
 
 Both applications derive legal defensibility from product architecture, not disclaimers: no output, no data retention, no ongoing relationship.
 
